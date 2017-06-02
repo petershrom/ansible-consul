@@ -81,5 +81,3 @@
   when: "{{ (consul_dnsmasq.upstream_servers is defined) and consul_dnsmasq.upstream_servers }}"
   notify:
     - restart dnsmasq
-
-- pause: minutes=1
